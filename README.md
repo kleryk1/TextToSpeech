@@ -4,6 +4,8 @@ http://mary.dfki.de/download/index.html
 
 http://mary.dfki.de/documentation/index.html
 
+https://github.com/marytts/marytts
+
 
 need a recent Java Runtime http://www.java.com/getjava
 
