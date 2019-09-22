@@ -6,3 +6,5 @@ http://mary.dfki.de/documentation/index.html
 
 
 need a recent Java Runtime http://www.java.com/getjava
+
+https://github.com/goxr3plus/Java-Text-To-Speech-Tutorial/tree/master/Mary%20TTS%20Program
