@@ -12,11 +12,11 @@ public class index {
 		//Create TextToSpeech
 		TextToSpeech tts = new TextToSpeech();
 		
+		tts.setVoice( "dfki-prudence-hsmm" );
+		tts.speak("Hello world!", 1.0f, false, false);
+
 		//Print all the available voices
 		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
-		
-		tts.setVoice( "cmu-slt-hsmm" );
-		tts.speak("Hello world!", 1.0f, false, false);
 
 		
 		
