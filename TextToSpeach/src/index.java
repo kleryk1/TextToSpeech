@@ -12,7 +12,7 @@ public class index {
 		//Create TextToSpeech
 		TextToSpeech tts = new TextToSpeech();
 		
-		tts.setVoice( "dfki-prudence-hsmm" );
+		//tts.setVoice( "dfki-prudence-hsmm" );
 		tts.speak("Hello world!", 1.0f, false, false);
 
 		//Print all the available voices
