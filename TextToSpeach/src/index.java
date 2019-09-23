@@ -15,13 +15,17 @@ public class index {
 		//Print all the available voices
 		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
 		
-		//tts.setVoice( "cmu-slt-hsmm" );
-		
+		tts.setVoice( "dfki-poppy-hsmm" );
 		tts.speak("Hello world!", 1.0f, false, false);
-		//		arrayList.forEach(word -> tts.speak(word, 1.0f, false, true));
-//		
-//
-//		
+
+		tts.setVoice( "cmu-slt-hsmm" );
+		tts.speak("Hello world!", 1.0f, false, false);
+
+		tts.setVoice( "cmu-rms-hsmm" );
+		tts.speak("Hello world!", 1.0f, false, false);
+		
+		
+		
 //		//=========================================================================
 //		//======================= Print available AUDIO EFFECTS ====================
 //		//=========================================================================
