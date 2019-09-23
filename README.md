@@ -14,3 +14,6 @@ https://github.com/goxr3plus/Java-Text-To-Speech-Tutorial/tree/master/Mary%20TTS
 Inspired From 
 https://github.com/goxr3plus
     https://github.com/goxr3plus/Java-Text-To-Speech-Tutorial
+
+
+require mpython 3.6.5 to add new voices
