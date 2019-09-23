@@ -13,9 +13,9 @@ public class index {
 		TextToSpeech tts = new TextToSpeech();
 		
 		//Print all the available voices
-//		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
+		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
 		
-		tts.setVoice( "cmu-slt-hsmm" );
+		//tts.setVoice( "cmu-slt-hsmm" );
 		
 		tts.speak("Hello world!", 1.0f, false, false);
 		//		arrayList.forEach(word -> tts.speak(word, 1.0f, false, true));

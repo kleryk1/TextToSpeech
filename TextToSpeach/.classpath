@@ -5,7 +5,7 @@
 	<classpathentry kind="lib" path="C:/Users/Kleryk/Documents/GitHub/TextToSpeech/TextToSpeach/resources/marytts-builder-5.2-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Kleryk/Documents/GitHub/TextToSpeech/TextToSpeach/resources/languages/marytts-lang-en-5.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Kleryk/Documents/GitHub/TextToSpeech/TextToSpeach/resources/voices/voice-cmu-rms-hsmm-5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kleryk/Documents/GitHub/TextToSpeech/TextToSpeach/resources/voices/voice-cmu-slt-hsmm-5.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Kleryk/Documents/GitHub/TextToSpeech/TextToSpeach/resources/voices/voice-dfki-poppy-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="resources/voices/voice-cmu-slt-hsmm-5.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
