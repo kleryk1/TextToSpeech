@@ -15,15 +15,9 @@ public class index {
 		//Print all the available voices
 		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
 		
-		tts.setVoice( "dfki-poppy-hsmm" );
-		tts.speak("Hello world!", 1.0f, false, false);
-
 		tts.setVoice( "cmu-slt-hsmm" );
 		tts.speak("Hello world!", 1.0f, false, false);
 
-		tts.setVoice( "cmu-rms-hsmm" );
-		tts.speak("Hello world!", 1.0f, false, false);
-		
 		
 		
 //		//=========================================================================
