@@ -1,30 +1,64 @@
-import core.TTS_Core_IF;
+import java.util.Locale;
+
+import cmd.handler.GUI_Handler;
 import core.objects.TextToSpeech;
-import marytts.modules.synthesis.Voice;
 
 // using mary tts
 //http://mary.dfki.de/download/index.html
 
 public class index {
 
-	public static void main(String[] args) {
+	public static void main( String[] args ) {
 
+		
+		
 		//Create TextToSpeech
-		TextToSpeech tts = new TextToSpeech();
+		TextToSpeech tts = new TextToSpeech( args );
 		
-		tts.setVoice( "dfki-prudence-hsmm" );
-		tts.speak("Hello world!", 1.0f, false, false);
+		// Start speech thread	
+//		tts.start_speech();
+		
+//        play...
+		
+		
+		// Stop speech thread
+//		tts.stop_speech();
+		// TODO start thread with merry
+		
+//		do {
+//			//Enter data using BufferReader 
+//	        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); 
+//			// Reading data using readLine 
+//	        try {
+//				String name = reader.readLine();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//		}while( !args[0].contains( "exit" ) );
+		
+		
+//		System.out.println( Locale.getDefault().toLanguageTag() );
+//		System.out.println(  Locale.getAvailableLocales() );		
+		// TODO close thread with merry
+		
+		
 
-		//Print all the available voices
-		Voice.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
+		
+
+//		// Setting the Current Voice
+//		tts.setVoice("cmu-rms-hsmm");
+		
+		//tts.speak("Hello world!", 1.0f, false, false);
 
 		
 		
-//		//=========================================================================
-//		//======================= Print available AUDIO EFFECTS ====================
-//		//=========================================================================
-//		
-//		//Print all the available audio effects
+		//=========================================================================
+		//======================= Print available AUDIO EFFECTS ====================
+		//=========================================================================
+		
+		//Print all the available audio effects
 //		tts.getAudioEffects().stream().forEach(audioEffect -> {
 //			System.out.println("-----Name-----");
 //			System.out.println(audioEffect.getName());
@@ -34,17 +68,7 @@ public class index {
 //			System.out.println(audioEffect.getHelpText() + "\n\n");
 //			
 //		});
-//		
-//		//=========================================================================
-//		//========================= Print available voices =========================
-//		//=========================================================================
-//		
-//		//Print all the available voices
-//		tts.getAvailableVoices().stream().forEach(voice -> System.out.println("Voice: " + voice));
-//		
-//		// Setting the Current Voice
-//		tts.setVoice("cmu-rms-hsmm");
-//		
+		
 //		//=========================================================================
 //		//========================= Let's try different effects=====================
 //		//=========================================================================
@@ -91,76 +115,76 @@ public class index {
 	
 	
 	
-	
-	public void tutorial_1_2_3_FromYoutube() {
-		TextToSpeech tts = new TextToSpeech();
-		
-		//=========================================================================
-		//=========================Print available voices =========================
-		//=========================================================================
-		
-
-		// Setting the Current Voice
-		tts.setVoice("cmu-rms-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("Today we will learn how to add different languages and voices on Mary T T S!", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("dfki-poppy-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("Who is Mary Bob?", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("cmu-rms-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("No one my darling...", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("dfki-poppy-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("I don't trust you", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("cmu-rms-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("Oh yeah baby!", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("dfki-poppy-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("aaaaaa", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("cmu-rms-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("yeah!", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("dfki-poppy-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("oh oh yeah!", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("dfki-poppy-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("I am Elize , a wonderful girl!", 2.0f, false, true);
-		
-		// Setting the Voice
-		tts.setVoice("cmu-rms-hsmm");
-		
-		// TTS say something that we actually are typing into the first variable
-		tts.speak("Shut up Elize . Let's continue our tutorials!", 2.0f, false, true);
-		
-	}
+//	
+//	public void tutorial_1_2_3_FromYoutube() {
+//		TextToSpeech tts = new TextToSpeech();
+//		
+//		//=========================================================================
+//		//=========================Print available voices =========================
+//		//=========================================================================
+//		
+//
+//		// Setting the Current Voice
+//		tts.setVoice("cmu-rms-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("Today we will learn how to add different languages and voices on Mary T T S!", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("dfki-poppy-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("Who is Mary Bob?", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("cmu-rms-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("No one my darling...", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("dfki-poppy-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("I don't trust you", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("cmu-rms-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("Oh yeah baby!", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("dfki-poppy-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("aaaaaa", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("cmu-rms-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("yeah!", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("dfki-poppy-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("oh oh yeah!", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("dfki-poppy-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("I am Elize , a wonderful girl!", 2.0f, false, true);
+//		
+//		// Setting the Voice
+//		tts.setVoice("cmu-rms-hsmm");
+//		
+//		// TTS say something that we actually are typing into the first variable
+//		tts.speak("Shut up Elize . Let's continue our tutorials!", 2.0f, false, true);
+//		
+//	}
 	
 	
 }
